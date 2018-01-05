@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="container bg-warning">
+            <h2>Todo List</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter name" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+                <label for="task">Task</label>
+                <input id="task" type="text" class="form-control" placeholder="Enter task" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>    
+    </div>
+
+{% endblock %}
