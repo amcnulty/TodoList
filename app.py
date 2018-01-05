@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
+app.debug = True
+app.secret_key = 'AKIAIUOCFW5U455BWWWQ'
 
 @app.route('/')
 def index():
@@ -15,4 +17,4 @@ def todo():
     return render_template('todo.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
