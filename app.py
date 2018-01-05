@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 app.debug = True
-app.secret_key = 'AKIAIUOCFW5U455BWWWQ'
+app.secret_key = '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'
 
 @app.route('/')
 def index():
